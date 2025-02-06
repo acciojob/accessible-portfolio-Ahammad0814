@@ -3,28 +3,33 @@
 <html>
 
 <head>
-	<title>Accessible Portfolio</title>
+	 <title>Accessible Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        a:focus {
+            outline: 2px solid #007BFF; /* Focus outline */
+        }
+    </style>
 </head>
 <body>
 
     <!-- Header Section with ARIA Role -->
-    <header role="heading">
+    <header role="banner">
         <h1>Your Name's Portfolio</h1>
     </header>
 
     <!-- Navigation Bar with ARIA Role -->
     <nav role="navigation">
         <ul role="list">
-            <li role="listitem"><a href="#about">About Me</a></li>
-            <li role="listitem"><a href="#skills">Skills</a></li>
-            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#about" title="Learn more about me">About Me</a></li>
+            <li role="listitem"><a href="#skills" title="My skills and expertise">Skills</a></li>
+            <li role="listitem"><a href="#projects" title="My completed projects">Projects</a></li>
         </ul>
     </nav>
 
     <!-- Image Section with ARIA Role -->
     <section>
-        <img src="your-image-url.jpg" alt="A portrait of Your Name" role="img" width="200">
+        <img src="your-image-url.jpg" alt="A professional portrait of Your Name, a web developer" width="200">
     </section>
 
     <!-- Brief Description Section -->
