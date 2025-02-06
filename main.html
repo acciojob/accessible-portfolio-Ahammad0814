@@ -8,6 +8,50 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+
+	<header role="heading">
+        <h1>Your Name's Portfolio</h1>
+    </header>
+
+    <!-- Navigation Bar with ARIA Role -->
+    <nav role="navigation">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image Section with ARIA Role -->
+    <section>
+        <img src="your-image-url.jpg" alt="A portrait of Your Name" role="img" width="200">
+    </section>
+
+    <!-- Description Section -->
+    <section role="contentinfo">
+        <p>Welcome to my portfolio! Here, you will find information about my skills, experience, and projects. Feel free to explore!</p>
+    </section>
+
+    <!-- Skills Section with ARIA Role -->
+    <section id="skills" role="region">
+        <h2>Skills</h2>
+        <ul role="list">
+            <li role="listitem">HTML</li>
+            <li role="listitem">CSS</li>
+            <li role="listitem">JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section with ARIA Role -->
+    <section id="projects" role="region">
+        <h2>Projects</h2>
+        <ul role="list">
+            <li role="listitem">Portfolio Website</li>
+            <li role="listitem">E-commerce Application</li>
+            <li role="listitem">Task Management App</li>
+        </ul>
+    </section>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
